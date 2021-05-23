@@ -9,7 +9,7 @@ export default function Photos() {
   return (
     <main className="photos">
       {allPhotos.map((img, index) => (
-        <Image className={getClass(index)} img={img} />
+        <Image className={getClass(index)} img={img} key={img.id} />
       ))}
     </main>
   );
